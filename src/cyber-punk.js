@@ -29,14 +29,13 @@ export default class CyberPunk extends HTMLElement {
         const text = this.innerHTML;
         const scrambleCount = Math.floor(Math.floor((Math.random() * text.length) / 10) + text.length / 20) + 1;
         const scrambleIterationCount = Math.floor(Math.random() * 10) + 2;
-        console.log('it', scrambleIterationCount);
         for (let j = 0; j < scrambleIterationCount; j++) {
             let newText = text;
             for (let i = 0; i < scrambleCount; i++) {
                 newText = this._scramble(newText);
             }
             this.innerHTML = newText;
-            await this._wait(50 - scrambleIterationCount);
+            await this._wait(60);
         }
         this.innerHTML = text;
     }
