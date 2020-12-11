@@ -1,6 +1,6 @@
 {
     "name": "cyber-punk-text",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A Cyberpunk 2077 inspired text effect for the Web",
     "main": "src/cyber-punk.js",
     "files": ["src/cyber-punk.js"],

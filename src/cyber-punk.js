@@ -27,7 +27,7 @@ export default class CyberPunk extends HTMLElement {
 
     async _doGlitch() {
         const text = this.innerHTML;
-        const scrambleCount = Math.floor(Math.floor((Math.random() * text.length) / 10) + text.length / 20);
+        const scrambleCount = Math.floor(Math.floor((Math.random() * text.length) / 10) + text.length / 20) + 1;
         const scrambleIterationCount = Math.floor(Math.random() * 10) + 2;
         console.log('it', scrambleIterationCount);
         for (let j = 0; j < scrambleIterationCount; j++) {
