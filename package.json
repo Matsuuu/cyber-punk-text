@@ -1,0 +1,24 @@
+{
+    "name": "cyber-punk-text",
+    "version": "1.0.0",
+    "description": "A Cyberpunk 2077 inspired text effect for the Web",
+    "main": "src/cyber-punk.js",
+    "files": ["src/cyber-punk.js"],
+    "scripts": {
+        "start": "wds --node-resolve --watch --open"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@simplr-wc/eslint-config": "^1.0.4",
+        "@simplr-wc/prettier-config": "^1.0.3",
+        "@web/dev-server": "0.0.27"
+    },
+    "prettier": "@simplr-wc/prettier-config",
+    "eslintConfig": {
+        "extends": [
+            "@simplr-wc/eslint-config"
+        ]
+    }
+}

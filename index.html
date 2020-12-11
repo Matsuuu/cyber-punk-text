@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML Element Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+        <style>
+            html,
+            body {
+                font-family: 'Roboto', sans-serif;
+                padding: 0;
+                margin: 0;
+                font-size: 1.4rem;
+                background: #2a2426;
+            }
+
+            .text-block {
+                display: flex;
+            }
+
+            cyber-punk {
+                margin-right: 0.5rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="text-block">
+            <cyber-punk red>Johnny: </cyber-punk>
+            <cyber-punk fadein glitch>Guess I do. Thought I'd feel like I'd closed a chapter here.</cyber-punk>
+        </div>
+        <script src="src/cyber-punk.js" type="module"></script>
+    </body>
+</html>
