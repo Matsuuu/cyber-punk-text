@@ -15,23 +15,58 @@
                 margin: 0;
                 font-size: 1.4rem;
                 background: #2a2426;
+                display: flex;
+                flex-direction: column;
+                margin: 5% 20% 0;
+                align-items: center;
+                justify-content: center;
             }
 
             .text-block {
                 display: flex;
+                width: 100%;
+                justify-content: flex-start;
             }
 
             cyber-punk {
                 margin-right: 0.5rem;
             }
+
+            textarea {
+                background: #071001;
+                opacity: 0.9;
+                color: #fff;
+                font-size: 1.2rem;
+                padding: 1rem;
+                border: none;
+                color: #5fa4a5;
+                border-radius: 12px;
+            }
         </style>
     </head>
 
     <body>
+        <!-- prettier-ignore -->
         <div class="text-block">
-            <cyber-punk red>Johnny: </cyber-punk>
-            <cyber-punk fadein glitch>Guess I do. Thought I'd feel like I'd closed a chapter here.</cyber-punk>
+<cyber-punk red>Johnny: </cyber-punk>
+<cyber-punk fadein glitch>
+    Guess I do. Thought I'd feel like I'd closed a chapter here.
+</cyber-punk>
         </div>
-        <script src="src/cyber-punk.js" type="module"></script>
+
+        <textarea cols="80" rows="10"></textarea>
+
+        <script type="module" src="./src/cyber-punk.js"></script>
+        <script>
+            const textarea = document.querySelector('textarea');
+            const textBlock = document.querySelector('.text-block');
+            let content = textBlock.innerHTML;
+            content = content.replaceAll('=""', '');
+            textarea.value = content;
+
+            textarea.addEventListener('blur', e => {
+                textBlock.innerHTML = e.target.value;
+            });
+        </script>
     </body>
 </html>

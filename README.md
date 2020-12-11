@@ -23,7 +23,7 @@ npm install cyber-punk-text
 ### CDN
 
 ```html
-<script src="cdn" type="module"></script>
+<script type="module" src="https://unpkg.com/cyber-punk-text@1.0.1/src/cyber-punk.js"></script>
 <cyber-punk>Hello there, V</cyber-punk>
 ```
 
